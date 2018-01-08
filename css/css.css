@@ -1,0 +1,136 @@
+/*
+	css file
+
+*/
+
+/* general settings */
+
+ a:link ,  a:visited ,  a:hover
+{
+	outline: 0 !important;
+	text-decoration: none !important;
+} 
+
+/* topBar */
+
+.topBar
+{
+	background-color: rgba(39, 0, 159, 1);
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.nav a
+{
+	font-family: roboto;
+	font-size: 25px;
+	margin-left: 3%;
+}
+
+.nav a:link , .nav a:visited
+{
+	color: rgba(255, 255, 255, 1);
+}
+
+.nav a:hover
+{
+	color: rgba(0, 255, 0 , 1);
+}
+
+.cart
+{
+	float: right; 
+	margin-right: 3%;	
+}
+
+/* categories */
+
+.categories
+{
+	margin-top: 10%;
+	float: left;
+	width: 8%;
+	height: 80vh;
+	border-right: 3px ridge black;
+	margin-left: 2%;
+
+}
+
+.categories li
+{
+	list-style-type: none;
+}
+
+.cat
+{
+	font-size: 15px;
+	font-weight: 700;
+	border-left: 5px solid blue;
+	background-color: rgba(135, 206, 235, 1);
+	text-align: center;
+}
+
+.categories a
+{
+	font-size: 13px;
+	
+}
+
+.categories a:link , .categories a:visited
+{
+	color: rgba(0, 0, 128, 1);
+}
+
+.categories a:hover
+{
+	color: rgba(0, 0, 255 , 1);
+}
+
+/* products */
+
+.products
+{
+	float: right;
+	width: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10%;
+	overflow: auto;
+	box-shadow: 0 0 10px;
+}
+
+.product
+{
+	float; left;
+	width: 20%;
+	height: 30vh;
+	border: 1px solid black;
+	margin: 2%;
+	text-align: center;
+	overflow: auto;
+	display: inline-block;
+}
+
+.product img
+{
+	width: 65%;
+	height: 65%;
+}
+
+/* title */
+
+.title
+{
+	width: 100%;
+	margin-top: 5%;
+}
+
+#name
+{
+	//font-size: 40px;
+	//color: rgba(0, 0, 0, 1);
+	//text-align: center;
+}

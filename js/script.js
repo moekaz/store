@@ -1,0 +1,3 @@
+/*
+	script file for the website 
+*/
