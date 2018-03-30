@@ -25,17 +25,19 @@
 
 		<div class = "head">
 			<p id = "prod"> Products </p>
+			<p id = "Names"> Name </p>
 			<p id = "price"> Price </p>
 			<p id = "quantity"> Quantity </p>
 		</div>
 
 		<div class = "items">
-
+			
+			<!-- items in cart -->
 			<div class = "cartItem">
 				<img src = "images/Aston Martin Vanquish.jpg">
 				<p class = "name"> Aston Martin Vanquish </p>
 				<p class = "pricing"> $<span class = "prices">200000</span> </p>
-				<input type = "number" value = "1">
+				<input class = "quantity" type = "number" value = "1" onclick = UpdateTotalCost()>
 			</div>
 
 			<hr>
@@ -44,7 +46,7 @@
 				<img src = "images/bmw z4.png">
 				<p class = "name"> bmw z4 </p>
 				<p class = "pricing"> $<span class = "prices">120000</span> </p>
-				<input type = "number" value = "1">
+				<input class = "quantity" type = "number" value = "1" onclick = UpdateTotalCost()>
 			</div>
 
 			<hr>
@@ -53,20 +55,26 @@
 				<img src = "images/McLaren 570S,570GT.jpg">
 				<p class = "name"> McLaren 570S,570GT </p>
 				<p class = "pricing"> $<span class = "prices">330000</span> </p>
-				<input type = "number" value = "1">
+				<input class = "quantity" type = "number" value = "1" onclick = UpdateTotalCost()>
 			</div>
 
 			<hr>
-
 			<br>
-
+			
+			<!-- Taxed total prices -->
+			<div id = "finalTotal">
+				<p>Total: <span id = "TaxedTotal"></span></p>
+			</div>
+			
+			<!-- subtotal prices -->
 			<div id = "total">
 				<p>Subtotal: <span id = "myTotal"></span></p>
 			</div>
-
-			<button class = "buttons" type= "button"> Make Purchase </button>
+			
+			<!-- button to make purchase -->
+			<button class = "buttons" type= "button" onclick = MakePurchase()> Make Purchase </button>
 		</div>
-
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src = "js/script.js"></script>
 	</body>
